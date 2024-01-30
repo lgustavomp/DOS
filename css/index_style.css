@@ -1,0 +1,132 @@
+body {
+    background-color: var(--clr-bw-drk);
+    overflow-x: hidden;
+    /* display: grid; */
+    position: relative;
+
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+/* header */
+header {
+    /* position: relative; */
+
+}
+.wrapper_header {
+    position: absolute;
+    position: fixed;
+    top: 30vh;
+    right: -190px;
+    width: 400px;
+    transition: right 0.25s ease-in;
+    height: 40vh;
+}
+.wrapper_header:hover,
+.wrapper_header:focus {
+    right: 0;
+    
+}
+.wrapper_header .wrapper_menu {
+    width: 50%;
+    height: 40vh;
+    /* margin: 5vh auto ; */
+    margin-left: 200px;
+    background-color: var(--clr-main-med);
+
+    z-index: 100;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.wrapper_menu hr {
+    border: 1px solid var(--clr-main-drk);
+}
+/* content */
+.wrapper_bg {
+    position: relative;
+}
+.wrapper_center {
+    margin: 0 10vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+
+}
+.wrapper_main {
+    flex: 1;
+    max-width: 2560px;
+    padding: 10px;
+    aspect-ratio: 16 / 9;
+    background-color: var(--clr-main-drk);
+    margin: auto;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    box-shadow: 0px 10px 25px 10px rgba(0,0,0,0.25);
+}
+.wrapper_equipe {
+    flex: 1;
+    max-width: 2560px;
+    padding: 10px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipe {
+    background-color: var(--clr-bw-drk);
+}
+.cards_equipe {
+    height: 100%;
+    width: 30%;
+    background-color: var(--clr-main-drk);
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px 10px rgba(0,0,0,0.25);
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.cards_equipe img {
+    padding: 10px;
+    width: calc(100% - 20px);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+.cards_equipe spam {
+    
+    padding: 20px;
+    width: calc(100% - 40px);
+    font-size: 64px;
+    font-weight: 300;
+    color: var(--clr-main-lgt);
+    position: relative;
+}
+/* .cards_equipe spam::before {
+    content: '%';
+    font-size: 72px;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--clr-main-med);
+    position: absolute;
+} */
+.cards_equipe p {
+    text-align: justify;
+    padding: 10px;
+    width: calc(100% - 20px);
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 32px;
+    color: var(--clr-main-lgt);
+}
+.cards_equipe p b {
+    font-weight: 300;
+    color: var(--clr-main-med);
+}

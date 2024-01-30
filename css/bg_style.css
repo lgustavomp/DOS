@@ -1,0 +1,102 @@
+.bg_circle {
+    position: absolute;
+    width: 75vh;
+    height: 75vh;
+    border-radius: 50%;
+    z-index: -1;
+}
+.bg_med {
+    background-color: var(--clr-main-med);
+    /* mix-blend-mode: soft-light; */
+    opacity: 0.1;
+    box-shadow: 0px 10px 25px 10px rgba(0,0,0,0.75);
+}
+.bg_drk {
+    background-color: var(--clr-main-drk);
+    opacity: 0.1;
+    /* mix-blend-mode: soft-light; */
+}
+.bg_outline {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--clr-main-med);
+}
+.bg_position_01 {
+    top: -5vh;
+    left: 1vw;
+    animation: bg_position_01 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_01 {
+    50% {top: 106vh; left:37vh}
+}
+.bg_position_02 {
+    top: 10vh;
+    left: 5vw;
+    animation: bg_position_02 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_02 {
+    50% {top: 130vh; left:30vh}
+}
+.bg_position_03 {
+    top: -2vh;
+    left: 6vw;
+    animation: bg_position_03 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_03 {
+    50% {top: 101vh; left:53vh}
+}
+/* .bg_logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    left: 50vw;
+    font-size: 45vw;
+    font-weight: 900;
+    z-index: -3;
+    opacity: 0.2;
+    } */
+
+.bg_titulos {
+    position: absolute;
+    top: 3vh;
+    left: 0vw;
+    height: auto;
+}
+.bg_titulos p {
+    padding-left: 15vh;
+    font-size: 72px;
+    font-weight: 100;
+    color: var(--clr-main-lgt);
+}
+.bg_projetos {
+    position: absolute;
+    left: 0vw;
+    animation: bg_position_04 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_04 {
+    50% {left: -50vw}
+}
+.bg_equipe {
+    position: absolute;
+    top: 100vh;
+    left: -50vw;
+    animation: bg_position_05 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_05 {
+    50% {left: 0vw}
+}
+.bg_contato {
+    position: absolute;
+    top: 200vh;
+    left: -50vw;
+    animation: bg_position_06 linear;
+    animation-timeline: scroll();
+}
+@keyframes bg_position_06 {
+    100% {left: 0vw}
+}

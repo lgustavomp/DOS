@@ -1,0 +1,17 @@
+:root {
+    --clr-main-lgt: hsl(40, 24%, 85%);
+    --clr-main-med: hsl(9, 36%, 48%);
+    --clr-main-drk: hsl(4, 11%, 28%);
+
+    --clr-bw-lgt: hsl(40, 5%, 95%);
+    --clr-bw-med: hsl(9, 5%, 50%);
+    --clr-bw-drk: hsl(4, 5%, 5%);
+    
+}
+.clr_main_lgt { color: var(--clr-main-lgt);}
+.clr_main_med { color: var(--clr-main-med);}
+.clr_main_drk { color: var(--clr-main-drk);}
+
+.clr_bw_lgt { color: var(--clr-bw-lgt);}
+.clr_bw_med { color: var(--clr-bw-med);}
+.clr_bw_drk { color: var(--clr-bw-drk);}
